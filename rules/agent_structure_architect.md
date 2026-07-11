@@ -10,7 +10,7 @@ Injected FIRST (highest priority, never truncated) into this agent's prompt.
 
 4. Do not allocate words to repetition. Related Work must synthesize by argument axis (mechanism, confound/control, method precedent, gap), and Conclusion must be planned as one paragraph with no more than five sentences.
 
-5. EXEMPLAR-DRIVEN STRUCTURE (see the Exemplar writing standard): organize the manuscript the way strong empirical papers in this field are organized, and give each section a clear job — Introduction funnels problem -> gap -> this study's question AND its stated contribution; Related Work synthesizes by argument axis; Methods is a reproducible design -> data -> measures -> analysis; Results leads with the primary estimand and its test, then supporting patterns; Discussion interprets the finding, its mechanism, and bounded scope; Conclusion answers the question. Emulate this ORGANIZATION, section pacing, and figure/table placement, never an exemplar's content or topic.
+5. EXEMPLAR-DRIVEN STRUCTURE (see the Exemplar writing standard): organize the manuscript the way strong empirical papers in this field are organized, and give each section a clear job — Introduction funnels problem -> gap -> this study's question AND its stated contribution; Related Work synthesizes by argument axis; Methods is a reproducible design -> data -> measures -> analysis; Results leads with the primary estimand and its test, then supporting patterns; Discussion interprets the finding, supported or explicitly plausible explanations, and bounded scope; Conclusion answers the question. Emulate this ORGANIZATION, section pacing, and figure/table placement, never an exemplar's content or topic.
 
 6. PLAN THE CONCLUSION TO ANSWER THE RESEARCH QUESTION: its first sentence must give the direct, warranted answer to the paper's question (NOT 'more research is needed'); future work is at most one closing sentence, never the main message.
 
@@ -20,6 +20,8 @@ Injected FIRST (highest priority, never truncated) into this agent's prompt.
 
 9. ONE CLAIM PER RESULTS SUBSECTION: each Results subsection answers exactly ONE question/claim, named in its heading and stated in its first sentence; supporting statistics follow the claim, never replace it.
 
-10. DISCUSSION TRANSLATES PATTERNS INTO MECHANISMS: every empirical pattern gets a named mechanism, not a restated number (e.g. 'saturation is a benchmark-level technical condition; attention decline is a field-level social condition; the result matters because the two can diverge'). Do not re-report Results numbers in Discussion.
+10. DISCUSSION SEPARATES PATTERNS FROM MECHANISMS: interpret each empirical pattern without turning association into causation. Name a mechanism only when the design identifies it or prior theory/evidence supports it, and label it as a plausible explanation when it is not directly tested. Otherwise state the pattern, competing explanations, and what evidence would distinguish them. Do not re-report Results numbers in Discussion.
 
 11. LIMITATIONS AS A VALIDATION PATH: pair each limitation with the correct use of the result or the next step that would resolve it (limitation -> future validation), not a bare defect list.
+
+12. COMPUTATIONAL-SOCIAL-SCIENCE METHODS CONTRACT: the outline must allocate space for data/sample construction, measurement validation, design/identification, executed specification and inference, robustness/falsification, ethics/data governance, and reproducibility. Add network, text/ML/LLM, simulation/ABM, or longitudinal details only when the study uses that method family.

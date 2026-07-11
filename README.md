@@ -1,9 +1,10 @@
 
 ## Layout
 
-- `stages/` — the 30 capability files, grouped by the pipeline stage that owns
+- `stages/` — the 31 capability files, grouped by the pipeline stage that owns
   them; every stage folder is flat
-- `rules/` — hard-rule sets exported verbatim from `capability_dispatcher.py`:
+- `rules/` — hard-rule sets derived from `capability_dispatcher.py` and maintained
+  in this library:
   one file per pipeline agent (`agent_*.md`) plus the universal sets injected
   into every prose writer
 - `mapping.json` — machine-readable stage → capabilities and agent → files/rules
@@ -40,7 +41,7 @@ capability files owned exclusively by those stages.
 |---|---:|---|
 | Stage 1 · Research | 4 | `literature_synthesizer` |
 | Stage 1.5 · Evidence execution | 6 | `experiment_engineer` |
-| Stage 2 · Write | 9 | `structure_architect`, `draft_writer`, `abstract_writer` |
+| Stage 2 · Write | 10 | `structure_architect`, `draft_writer`, `abstract_writer` |
 | Stage 2.5 · Pre-review integrity | 2 | — |
 | Stage 3 · Review | 7 | review panel and editorial agents |
 | Stage 4 · Revise | 2 | `revision_writer` |
@@ -53,14 +54,14 @@ capability files owned exclusively by those stages.
 |---|---|---:|---:|
 | Stage 1 | `literature_synthesizer` | 3 | 4 |
 | Stage 1.5 | `experiment_engineer` | 15 | 6 |
-| Stage 2 | `abstract_writer` | 7 | 4 |
-| Stage 2 | `draft_writer` | 19 | 5 |
-| Stage 2 | `structure_architect` | 11 | 4 |
+| Stage 2 | `abstract_writer` | 8 | 4 |
+| Stage 2 | `draft_writer` | 23 | 5 |
+| Stage 2 | `structure_architect` | 12 | 4 |
 | Stage 3 | `devils_advocate` | 1 | 3 |
 | Stage 3 | `domain_reviewer` | 1 | 2 |
 | Stage 3 | `editorial` | 1 | 3 |
-| Stage 3 | `independent_reviewer` | 2 | 4 |
-| Stage 3 | `methodology_reviewer` | 3 | 4 |
+| Stage 3 | `independent_reviewer` | 3 | 4 |
+| Stage 3 | `methodology_reviewer` | 5 | 4 |
 | Stage 3 | `reviewer` | 0 | 1 |
-| Stage 4 | `revision_writer` | 6 | 5 |
-| Stage 4.5 | `final_paper_evaluator` | 4 | 4 |
+| Stage 4 | `revision_writer` | 7 | 5 |
+| Stage 4.5 | `final_paper_evaluator` | 5 | 4 |

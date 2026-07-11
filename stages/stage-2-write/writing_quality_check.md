@@ -10,7 +10,7 @@ Reference this checklist during the self-review step of drafting (draft_writer_a
 
 ---
 
-## Four operational rules (highest-leverage — apply to every draft and revision)
+## Core operational rules (highest-leverage — apply to every draft and revision)
 
 These target the two failure modes seen most: a paper 3× longer than its information content,
 and a paper that paraphrases its own logs instead of stating findings.
@@ -36,10 +36,12 @@ and a paper that paraphrases its own logs instead of stating findings.
    lede in mid-Results behind soft words like "modest separation". What you set out to test
    ≠ what you most firmly found.
 
-3a. **Narrate nulls as nulls.** A non-significant contrast (CI includes zero) is written as
-   compatibility with no difference — "consistent with no difference (estimate X, 95% CI
-   [L, U], p = P)" — never with its direction as the sentence's main claim ("was negative",
-   "had lower survival"). The sign belongs inside the parenthetical statistics only.
+3a. **Distinguish evidence of absence from absence of evidence.** Interpret the estimate and
+   confidence interval against a pre-specified smallest substantively meaningful effect when one
+   exists. A sufficiently precise interval inside that equivalence region supports no meaningful
+   difference; an interval that still includes meaningful effects is inconclusive; an interval
+   excluding the null supports a directional difference. Never treat *p* > .05 alone as evidence
+   that the groups are equivalent. Report the estimate and interval in every case.
 
 3b. **Reconcile your own robustness; never bury a significant secondary.** If any
    pre-registered sensitivity/window row flips significance versus the primary, the text
@@ -160,6 +162,10 @@ Flag and rewrite:
 - internal draft
 - provenance
 
+Standard scientific uses such as `data provenance` are allowed when they describe
+the study's actual data lineage or methods. Flag only workflow provenance that
+exposes internal orchestration, validation, or revision state.
+
 Acceptable public alternatives:
 - study
 - analysis
@@ -246,15 +252,15 @@ Acceptable uses of `implementation` language are narrow: software-methods papers
 ## B. Punctuation Pattern Control
 
 ### Em Dash (—)
-- **Limit**: ≤ 3 per paper total, recommend 0-1
-- **Why**: AI text overuses em dashes for parenthetical asides. Academic writing typically uses commas, parentheses, or separate sentences instead
-- **Fix**: Replace with commas, parentheses, or restructure into separate sentences
+- **Review trigger**: repeated em dashes used as a default parenthetical device
+- **Why**: Frequent asides can obscure the main clause; there is no universal numeric cap, and venue style takes priority
+- **Fix**: Keep purposeful uses; otherwise use commas, parentheses, or separate sentences
 - **Exception**: Direct quotes from sources retain their original punctuation
 
 ### Semicolons
-- **Limit**: ≤ 2 per 1000 words
-- **Why**: AI text chains independent clauses with semicolons where a period would be clearer
-- **Fix**: Use a period and start a new sentence. Reserve semicolons for closely related parallel structures
+- **Review trigger**: repeated semicolons chaining sentences that would read more clearly apart
+- **Why**: Semicolons are legitimate academic punctuation, but repeated clause chaining can become dense
+- **Fix**: Keep semicolons that express a close relationship or separate complex list items; split only when clarity improves
 
 ### Colon-List Sequences
 - **Rule**: Avoid 2+ consecutive paragraphs that each open with a colon followed by a list
@@ -369,12 +375,15 @@ Do NOT report scores to the user. Just fix the issues silently during drafting.
    are treated), and the observation window — before any procedure detail.
 2. **Results raw evidence first**: the first Results paragraph gives raw
    quantities (per-condition unit counts, raw group means/risks) before any
-   derived statistic; then the contrast with CI and p.
-3. **Abstract number density**: at most three numbers — the group values (or
-   the primary estimate) plus ONE uncertainty statement (p to two significant
-   figures OR the CI, never both, never adjusted-p/effect-size stacks).
-4. **Conclusion**: at most two short paragraphs — first answers the research
-   question, optional second says why the measurement design matters. No
+   derived statistic; then the contrast with appropriate uncertainty and a
+   *p* value only when relevant.
+3. **Abstract number density**: unless the locked venue requires additional
+   named numeric fields, use at most three numbers — the group values (or the
+   primary estimate) plus ONE uncertainty statement (p to two significant figures
+   OR the CI, never both, never adjusted-p/effect-size stacks). If the venue
+   requires more, include only the required fields.
+4. **Conclusion**: one short paragraph — its first sentence answers the research
+   question, and a later sentence may say why the measurement design matters. No
    sentence over ~35 words.
 5. **Terminology**: use the section contract's glossary names for unit/event/
    outcome verbatim; never pipeline/data labels (C1_*, *_proxy, snake_case

@@ -2,6 +2,14 @@
 
 Used by `abstract_agent`.
 
+## Venue precedence
+
+The target venue's explicit instructions override the defaults below for word
+count, paragraph or heading structure, citations, keyword count, and required
+numeric fields. Evidence-integrity rules still apply: never invent content, and
+state the substantive finding in plain language before presenting dense statistics
+whenever the required format permits.
+
 ## Non-negotiables (external-faculty-review derived — check these FIRST)
 
 A faculty review of three shipped papers rejected every abstract on the same
@@ -106,7 +114,7 @@ State the significance, practical implications, or recommendations.
 
 ### Example (English, Education)
 
-> Declining enrollment poses existential challenges for private higher education institutions in Taiwan, yet institutional responses remain poorly understood. This study examines the strategic adaptation patterns of 12 private universities experiencing enrollment declines exceeding 20% between 2018 and 2023. Using a multiple case study design, we analyzed institutional documents, enrollment data, and 36 semi-structured interviews with administrators. Three distinct adaptation strategies emerged: program consolidation (n = 5), niche specialization (n = 4), and merger pursuit (n = 3). Institutions adopting niche specialization demonstrated the highest enrollment recovery rates (mean = 12.3%). However, successful adaptation was contingent upon early action — institutions that initiated strategic changes within two years of enrollment decline showed significantly better outcomes than late movers (p < .01). These findings suggest that private institutions should adopt proactive monitoring systems and consider niche specialization as a primary survival strategy.
+> Declining enrollment poses existential challenges for private higher education institutions in Taiwan, yet institutional responses remain poorly understood. This study examines the strategic adaptation patterns of 12 private universities between 2018 and 2023. Using a multiple case study design, we analyzed institutional documents, enrollment data, and 36 semi-structured interviews with administrators. Institutions that pursued niche specialization recovered enrollment more strongly than those using other strategies. Their mean recovery was 12.3% (*p* < .01). This pattern suggests that proactive specialization may help private institutions respond to enrollment decline, although evidence from Taiwan may not generalize to other higher education systems.
 >
 > **Keywords**: higher education, enrollment decline, private universities, institutional strategy, Taiwan
 

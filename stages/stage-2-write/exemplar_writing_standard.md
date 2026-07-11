@@ -8,12 +8,12 @@ organization, pacing, and presentation — never any exemplar's content or topic
 
 ## Section organization (what each section must do)
 
-- **Abstract** — one paragraph: context -> question -> approach -> the key result WITH its number -> implication. Lead with the finding, not the aim.
+- **Abstract** — one paragraph: context -> question -> approach -> the key result WITH its number -> implication. After the problem and question are clear, lead the findings portion with the key finding rather than restating the aim.
 - **Introduction** — a funnel: (1) the problem and why it matters, (2) what prior work establishes and the SPECIFIC gap, (3) this study's question and its stated contribution. End the Introduction knowing exactly what the paper adds.
 - **Related Work** — synthesis by argument axis (mechanism, confound/control, method precedent, gap), not a one-paper-per-sentence roll call. Say what each cited work SPECIFICALLY did/found and how it relates to the present design.
 - **Methods** — reproducible: design -> data/generative procedure -> measures/estimand -> analysis and tests. A reader could re-run it. Report the control/null explicitly.
-- **Results** — lead with the PRIMARY estimand and its test (effect, CI, p), then supporting patterns and robustness across variants. Every number ties to a table/figure. Report honestly, including non-monotonic or partial patterns.
-- **Discussion** — interpret the finding: what it means, the plausible mechanism, agreement/tension with prior work, and the bounded scope. Do NOT restate Results number-by-number.
+- **Results** — lead with the PRIMARY estimand, effect, and appropriate uncertainty (*p* when relevant), then supporting patterns and robustness across variants. Every number ties to a table/figure. Report honestly, including non-monotonic or partial patterns.
+- **Discussion** — interpret the finding: what it means, a plausible mechanism only when supported by the design or prior evidence, agreement/tension with prior work, competing explanations, and the bounded scope. Do NOT restate Results number-by-number or convert association into causation.
 - **Limitations** — the single home for caveats. State each once, concretely.
 - **Conclusion** — ONE paragraph, <=5 sentences, whose FIRST sentence ANSWERS the research question with warranted confidence. At most one future-work sentence.
 

@@ -2,6 +2,11 @@
 
 Used by `structure_architect_agent` and `intake_agent` to select the appropriate paper structure.
 
+These are starting templates, not an exhaustive taxonomy. The study design,
+discipline, and target venue override them. In particular, "conference paper"
+describes a venue/length constraint and may still use IMRaD, review, theoretical,
+case-study, or another evidence-appropriate structure.
+
 ## Pattern 1: IMRaD (Introduction-Method-Results-Discussion)
 
 **Best for**: Empirical research with original data collection and analysis

@@ -154,8 +154,9 @@ Use `implemented` sparingly and only when implementation is the actual object of
 The pipeline's own control-plane terms are internal provenance and MUST NOT appear in
 manuscript prose or titles: "locked estimand", "estimand lock", "design lock",
 "permanent-rewrite criterion", "confirmatory criterion" (as a named object), "reality
-gate", "carry-forward", "evidence packet", "manipulation check" (as a phrase), "data
-provenance" (as a phrase). Translate to standard research English: "the pre-registered
-primary estimand", "the pre-specified decision rule", "the confirmatory hypothesis",
-"cohort separation on the classifying variable". A reader must not be able to infer the
-orchestration system from the paper's vocabulary.
+gate", "carry-forward", or "evidence packet". Translate them to standard research
+English: "the pre-registered primary estimand", "the pre-specified decision rule", or
+"the confirmatory hypothesis". Standard scientific terms such as "manipulation check"
+and "data provenance" are allowed when they describe the study's actual methods; never
+use them as aliases for internal gates, logs, or orchestration state. A reader must not
+be able to infer the orchestration system from the paper's vocabulary.

@@ -37,9 +37,12 @@ what was sampled, measured, compared, excluded, and inferred?
    describe the specification that actually ran: naming covariates the
    executed model does not carry is misreporting.
 
-8. **Nulls narrated as nulls.** A non-significant contrast reads "consistent
-   with no difference (estimate, 95% CI, p)" — never with its direction as
-   the sentence's main claim ("was negative", "had lower survival").
+8. **Absence versus uncertainty.** Interpret the estimate and interval against a
+   pre-specified smallest substantively meaningful effect when one exists. A
+   sufficiently precise interval inside that region supports no meaningful
+   difference; an interval that includes meaningful effects is inconclusive; an
+   interval excluding the null supports a directional difference. Never treat
+   *p* > .05 alone as equivalence.
 
 9. **Robustness reconciled.** A sensitivity row that flips significance
    versus the primary is reported and reconciled in the text; a significant
@@ -57,6 +60,7 @@ what was sampled, measured, compared, excluded, and inferred?
 - Can the Methods answer "why this N, sampled how, over what window?"
 - Can a reader reconstruct the denominator for every major percentage?
 - Does each causal or comparative verb match the design actually executed?
-- Is any non-significant contrast narrated directionally in a main clause?
+- Does each null or uncertain result reflect interval precision and the
+  substantively meaningful-effect threshold rather than *p* > .05 alone?
 - Are limitations framed as sampling, measurement, construct, model, or
   external-validity limits rather than as missing implementation features?

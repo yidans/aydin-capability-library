@@ -16,7 +16,7 @@ ARS pipelines count words as `len(body.split())` in Python — that is, splits o
 
 1. **Reproducible.** Anyone running `len(body.split())` on the same UTF-8 text gets the same number. No hidden tokenizer state.
 2. **Matches Microsoft Word default.** Most authors check word count in Word, which uses a whitespace-equivalent algorithm. Aligning with the dominant authoring environment minimises surprise.
-3. **Conservative under hyphenation.** "State-of-the-art" counts as 1 token under whitespace-split. Under hyphenated-as-N this would count as 4. Whitespace-split therefore systematically reports a lower total than hyphenated-as-N — which is the safer direction when chasing a hard cap.
+3. **Predictable under hyphenation.** "State-of-the-art" counts as 1 token under whitespace-split. Under hyphenated-as-N this would count as 4. Because whitespace-split can report the lower total, it is not inherently safer for a hard cap; use the buffer below or the venue's higher authoritative count.
 4. **English-output aligned.** The package produces English public artifacts, where whitespace-split is a practical universal lower bound.
 
 ### What whitespace-split counts
@@ -87,6 +87,12 @@ ARS pipelines reserve **3–5% below the publisher's stated hard cap** as buffer
 - **5%** when the publisher's algorithm is unstated or the protected hedges are minimal. Looser buffer absorbs more uncertainty.
 
 ### When NOT to use buffer
+
+Do not add the generic buffer when the venue's submission system provides the
+authoritative count for the final text and that count has been verified directly.
+Also do not apply it when a venue specifies an exact range and the buffer would
+push the manuscript below the minimum. Explicit venue rules always override the
+ARS default.
 
 ## Where this convention is enforced
 
