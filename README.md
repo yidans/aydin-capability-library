@@ -1,15 +1,3 @@
-# Aydin Capability Library
-
-The professional knowledge layer of the **Professor Aydin** autonomous research
-scientist (hermes-ai-professor), extracted as a standalone library:
-**30 capability files** + the distilled **hard-rule sets** the
-pipeline injects into each LLM agent.
-
-**Version: hermes-ai-professor commit 0936a45 (2026-07-09 08:28 -0700; captures the 2026-07-08 post-professor-review-overhaul state, BEFORE the 07-09/10 dispatcher routing fixes and the r2 fix batch).**
-
-Every rule marked "a live external review / a live run" was distilled from a
-real failure of a real generated paper — this library is failure-driven, not
-aspirational.
 
 ## Layout
 
