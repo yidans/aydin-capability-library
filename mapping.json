@@ -1,0 +1,244 @@
+{
+  "source": "hermes-ai-professor commit 0936a45 (2026-07-09 08:28 -0700; captures the 2026-07-08 post-professor-review-overhaul state, BEFORE the 07-09/10 dispatcher routing fixes and the r2 fix batch)",
+  "source_commit": "0936a45",
+  "exported_at": "2026-07-10",
+  "injection_budgets": {
+    "per_file_chars": 3000,
+    "total_chars": 12500,
+    "note": "hard rules are never truncated; subagents read FULL files"
+  },
+  "prose_writer_tokens": [
+    "writer",
+    "expander",
+    "abstract",
+    "manuscript",
+    "copyedit",
+    "synthes"
+  ],
+  "stages": {
+    "stage-1-research": {
+      "agents": ["literature_synthesizer"],
+      "capability_files": [
+        "stages/stage-1-research/research_architect_agent.md",
+        "stages/stage-1-research/source_quality_hierarchy.md",
+        "stages/stage-1-research/methodology_patterns.md",
+        "stages/stage-1-research/argumentation_reasoning_framework.md"
+      ]
+    },
+    "stage-1.5-evidence-execution": {
+      "agents": ["experiment_engineer"],
+      "capability_files": [
+        "stages/stage-1.5-evidence-execution/computational_budget_guidelines.md",
+        "stages/stage-1.5-evidence-execution/statistical_visualization_standards.md",
+        "stages/stage-1.5-evidence-execution/chart_types.md",
+        "stages/stage-1.5-evidence-execution/ground_truth_isolation_pattern.md",
+        "stages/stage-1.5-evidence-execution/figure_metadata_schema.md",
+        "stages/stage-1.5-evidence-execution/methods_sophistication_standard.md"
+      ]
+    },
+    "stage-2-write": {
+      "agents": ["structure_architect", "draft_writer", "abstract_writer"],
+      "capability_files": [
+        "stages/stage-2-write/structure_architect_agent.md",
+        "stages/stage-2-write/abstract_writing_guide.md",
+        "stages/stage-2-write/anti_leakage_protocol.md",
+        "stages/stage-2-write/exemplar_writing_standard.md",
+        "stages/stage-2-write/paper_structure_patterns.md",
+        "stages/stage-2-write/social_science_narrative_style.md",
+        "stages/stage-2-write/writing_quality_check.md",
+        "stages/stage-2-write/computational_social_science_reporting.md",
+        "stages/stage-2-write/forbidden_phrases.md",
+        "stages/stage-2-write/word_count_conventions.md"
+      ]
+    },
+    "stage-2.5-pre-review-integrity": {
+      "agents": [],
+      "capability_files": [
+        "stages/stage-2.5-pre-review-integrity/transparent_empirical_reporting.md",
+        "stages/stage-2.5-pre-review-integrity/figure_table_evidence_audit.md"
+      ]
+    },
+    "stage-3-review": {
+      "agents": [
+        "devils_advocate",
+        "domain_reviewer",
+        "editorial",
+        "independent_reviewer",
+        "methodology_reviewer",
+        "reviewer"
+      ],
+      "capability_files": [
+        "stages/stage-3-review/editorial_decision_standards.md",
+        "stages/stage-3-review/quality_rubrics.md",
+        "stages/stage-3-review/review_criteria_framework.md",
+        "stages/stage-3-review/review_quality_thinking.md",
+        "stages/stage-3-review/statistical_reporting_standards.md",
+        "stages/stage-3-review/top_journals_by_field.md",
+        "stages/stage-3-review/logical_fallacies.md"
+      ]
+    },
+    "stage-4-revise": {
+      "agents": ["revision_writer"],
+      "capability_files": [
+        "stages/stage-4-revise/revision_coach_agent.md",
+        "stages/stage-4-revise/protected_hedging_phrases.md"
+      ]
+    },
+    "stage-4.5-final-integrity": {
+      "agents": ["final_paper_evaluator"],
+      "capability_files": []
+    },
+    "stage-5-finalize": {
+      "agents": [],
+      "capability_files": []
+    }
+  },
+  "agents": {
+    "abstract_writer": {
+      "stage": "stage-2-write",
+      "capability_files": [
+        "stages/stage-2-write/abstract_writing_guide.md",
+        "stages/stage-2-write/anti_leakage_protocol.md",
+        "stages/stage-2-write/forbidden_phrases.md",
+        "stages/stage-2-write/word_count_conventions.md"
+      ],
+      "hard_rule_count": 8,
+      "hard_rules_file": "rules/agent_abstract_writer.md"
+    },
+    "devils_advocate": {
+      "stage": "stage-3-review",
+      "capability_files": [
+        "stages/stage-3-review/review_quality_thinking.md",
+        "stages/stage-3-review/statistical_reporting_standards.md",
+        "stages/stage-3-review/logical_fallacies.md"
+      ],
+      "hard_rule_count": 1,
+      "hard_rules_file": "rules/agent_devils_advocate.md"
+    },
+    "domain_reviewer": {
+      "stage": "stage-3-review",
+      "capability_files": [
+        "stages/stage-3-review/quality_rubrics.md",
+        "stages/stage-1-research/argumentation_reasoning_framework.md"
+      ],
+      "hard_rule_count": 1,
+      "hard_rules_file": "rules/agent_domain_reviewer.md"
+    },
+    "draft_writer": {
+      "stage": "stage-2-write",
+      "capability_files": [
+        "stages/stage-2-write/exemplar_writing_standard.md",
+        "stages/stage-2-write/anti_leakage_protocol.md",
+        "stages/stage-2-write/forbidden_phrases.md",
+        "stages/stage-2-write/social_science_narrative_style.md",
+        "stages/stage-2-write/computational_social_science_reporting.md"
+      ],
+      "hard_rule_count": 23,
+      "hard_rules_file": "rules/agent_draft_writer.md"
+    },
+    "editorial": {
+      "stage": "stage-3-review",
+      "capability_files": [
+        "stages/stage-3-review/editorial_decision_standards.md",
+        "stages/stage-2-write/social_science_narrative_style.md",
+        "stages/stage-3-review/top_journals_by_field.md"
+      ],
+      "hard_rule_count": 1,
+      "hard_rules_file": "rules/agent_editorial.md"
+    },
+    "experiment_engineer": {
+      "stage": "stage-1.5-evidence-execution",
+      "capability_files": [
+        "stages/stage-1.5-evidence-execution/computational_budget_guidelines.md",
+        "stages/stage-1.5-evidence-execution/statistical_visualization_standards.md",
+        "stages/stage-1.5-evidence-execution/chart_types.md",
+        "stages/stage-1.5-evidence-execution/ground_truth_isolation_pattern.md",
+        "stages/stage-1.5-evidence-execution/figure_metadata_schema.md",
+        "stages/stage-1.5-evidence-execution/methods_sophistication_standard.md"
+      ],
+      "hard_rule_count": 15,
+      "hard_rules_file": "rules/agent_experiment_engineer.md"
+    },
+    "final_paper_evaluator": {
+      "stage": "stage-4.5-final-integrity",
+      "capability_files": [
+        "stages/stage-2-write/writing_quality_check.md",
+        "stages/stage-2-write/social_science_narrative_style.md",
+        "stages/stage-2.5-pre-review-integrity/transparent_empirical_reporting.md",
+        "stages/stage-2.5-pre-review-integrity/figure_table_evidence_audit.md"
+      ],
+      "hard_rule_count": 5,
+      "hard_rules_file": "rules/agent_final_paper_evaluator.md"
+    },
+    "independent_reviewer": {
+      "stage": "stage-3-review",
+      "capability_files": [
+        "stages/stage-3-review/statistical_reporting_standards.md",
+        "stages/stage-2.5-pre-review-integrity/transparent_empirical_reporting.md",
+        "stages/stage-2.5-pre-review-integrity/figure_table_evidence_audit.md",
+        "stages/stage-3-review/review_criteria_framework.md"
+      ],
+      "hard_rule_count": 3,
+      "hard_rules_file": "rules/agent_independent_reviewer.md"
+    },
+    "literature_synthesizer": {
+      "stage": "stage-1-research",
+      "capability_files": [
+        "stages/stage-1-research/research_architect_agent.md",
+        "stages/stage-1-research/source_quality_hierarchy.md",
+        "stages/stage-1-research/methodology_patterns.md",
+        "stages/stage-1-research/argumentation_reasoning_framework.md"
+      ],
+      "hard_rule_count": 3,
+      "hard_rules_file": "rules/agent_literature_synthesizer.md"
+    },
+    "methodology_reviewer": {
+      "stage": "stage-3-review",
+      "capability_files": [
+        "stages/stage-1.5-evidence-execution/methods_sophistication_standard.md",
+        "stages/stage-3-review/statistical_reporting_standards.md",
+        "stages/stage-2.5-pre-review-integrity/transparent_empirical_reporting.md",
+        "stages/stage-3-review/review_criteria_framework.md"
+      ],
+      "hard_rule_count": 5,
+      "hard_rules_file": "rules/agent_methodology_reviewer.md"
+    },
+    "reviewer": {
+      "stage": "stage-3-review",
+      "capability_files": [
+        "stages/stage-3-review/statistical_reporting_standards.md"
+      ],
+      "hard_rule_count": 0,
+      "hard_rules_file": null
+    },
+    "revision_writer": {
+      "stage": "stage-4-revise",
+      "capability_files": [
+        "stages/stage-4-revise/revision_coach_agent.md",
+        "stages/stage-2-write/social_science_narrative_style.md",
+        "stages/stage-2-write/writing_quality_check.md",
+        "stages/stage-2.5-pre-review-integrity/figure_table_evidence_audit.md",
+        "stages/stage-4-revise/protected_hedging_phrases.md"
+      ],
+      "hard_rule_count": 7,
+      "hard_rules_file": "rules/agent_revision_writer.md"
+    },
+    "structure_architect": {
+      "stage": "stage-2-write",
+      "capability_files": [
+        "stages/stage-2-write/exemplar_writing_standard.md",
+        "stages/stage-2-write/social_science_narrative_style.md",
+        "stages/stage-2-write/paper_structure_patterns.md",
+        "stages/stage-2-write/structure_architect_agent.md"
+      ],
+      "hard_rule_count": 12,
+      "hard_rules_file": "rules/agent_structure_architect.md"
+    }
+  },
+  "prose_fallback_files": [
+    "stages/stage-2-write/anti_leakage_protocol.md",
+    "stages/stage-2-write/forbidden_phrases.md",
+    "stages/stage-2-write/writing_quality_check.md",
+    "stages/stage-2-write/computational_social_science_reporting.md"
+  ]
+}
