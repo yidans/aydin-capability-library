@@ -281,7 +281,7 @@ Handoff format requirements:
 | Structure pattern | Uses one of the 6 recognized patterns (or reasonable hybrid) | Return to re-select with justification |
 | Section purpose | 100% of sections have a clear Purpose statement | Write missing Purpose statements |
 | Word count sum | Deviation <= +/-5% from target word count | Reallocate word counts |
-| Evidence distribution | Every source from Phase 1 is assigned to at least one section | Identify unassigned sources, assign or remove |
+| Evidence distribution | Every source selected for use is assigned to at least one section; unused sources are explicitly excluded | Assign selected sources or record why they are unused |
 | Transition logic | Every adjacent section pair has Transition Logic | Write missing transitions |
 | Heading levels | Follows APA convention (<=5 levels) | Merge overly deep levels |
 | Autonomous outline validation | Outline satisfies the Paper Configuration Record, evidence map, and quality gates | Must not proceed to Phase 3 |
@@ -312,7 +312,7 @@ Quality gate not passed ->
 
 | Missing Item | Handling |
 |--------|---------|
-| Literature Search Report not provided | Infer likely topic distribution from RQ; mark "sources pending" in outline |
+| Literature Search Report not provided | Do not infer evidence coverage; mark evidence-dependent sections blocked and request the upstream report |
 | Word count target not specified | Use default median for paper type (e.g., IMRaD -> 6,000 words) |
 | Paper type not supplied | Infer from research question and available evidence; record the default used |
 
@@ -320,7 +320,7 @@ Quality gate not passed ->
 
 | Issue | Handling |
 |------|---------|
-| Literature Matrix has too few themes (< 3 Themes) | Suggest splitting existing themes or supplementing search |
+| Literature Matrix has only 1-2 supported themes | Keep the supported themes; supplement the search only if the research question requires missing coverage, and never split themes to meet a count |
 | Literature Matrix has too many themes (> 6 Themes) | Suggest merging similar themes; keep Literature Review to 3-5 thematic sections |
 | Annotated bibliography missing "Potential Use" field | Infer section assignment from source content, but mark "auto-inferred" |
 
@@ -362,7 +362,7 @@ Quality gate not passed ->
 - Outline must follow a recognized structure pattern
 - Every section has a clear purpose statement
 - Word counts sum to within +/-5% of target
-- Every literature source from Phase 1 is assigned to at least one section
+- Every literature source selected for use is assigned to at least one section; unused sources are explicitly excluded
 - Transition logic is specified for every section boundary
 - Heading levels follow APA conventions (max 5 levels)
 - Outline must pass autonomous validation before proceeding to Phase 3

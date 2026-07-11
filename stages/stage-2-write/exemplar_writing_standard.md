@@ -8,7 +8,7 @@ organization, pacing, and presentation — never any exemplar's content or topic
 
 ## Section organization (what each section must do)
 
-- **Abstract** — one paragraph: context -> question -> approach -> the key result WITH its number -> implication. Lead with the finding, not the aim.
+- **Abstract** — one paragraph: context -> question -> approach -> the key result WITH its number -> implication. After the problem and question are clear, lead the findings portion with the key finding rather than restating the aim.
 - **Introduction** — a funnel: (1) the problem and why it matters, (2) what prior work establishes and the SPECIFIC gap, (3) this study's question and its stated contribution. End the Introduction knowing exactly what the paper adds.
 - **Related Work** — synthesis by argument axis (mechanism, confound/control, method precedent, gap), not a one-paper-per-sentence roll call. Say what each cited work SPECIFICALLY did/found and how it relates to the present design.
 - **Methods** — reproducible: design -> data/generative procedure -> measures/estimand -> analysis and tests. A reader could re-run it. Report the control/null explicitly.
