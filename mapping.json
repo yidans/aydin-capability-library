@@ -1,0 +1,152 @@
+{
+  "source": "hermes-ai-professor commit 0936a45 (2026-07-09 08:28 -0700; captures the 2026-07-08 post-professor-review-overhaul state, BEFORE the 07-09/10 dispatcher routing fixes and the r2 fix batch)",
+  "source_commit": "0936a45",
+  "exported_at": "2026-07-10",
+  "injection_budgets": {
+    "per_file_chars": 3000,
+    "total_chars": 12500,
+    "note": "hard rules are never truncated; subagents read FULL files"
+  },
+  "prose_writer_tokens": [
+    "writer",
+    "expander",
+    "abstract",
+    "manuscript",
+    "copyedit",
+    "synthes"
+  ],
+  "agents": {
+    "abstract_writer": {
+      "capability_files": [
+        "capabilities/academic-paper/references/abstract_writing_guide.md",
+        "capabilities/academic-paper/references/anti_leakage_protocol.md",
+        "shared/taxonomies/forbidden_phrases.md",
+        "shared/references/word_count_conventions.md"
+      ],
+      "hard_rule_count": 7,
+      "hard_rules_file": "rules/agent_abstract_writer.md"
+    },
+    "devils_advocate": {
+      "capability_files": [
+        "capabilities/academic-paper-reviewer/references/review_quality_thinking.md",
+        "capabilities/academic-paper-reviewer/references/statistical_reporting_standards.md",
+        "capabilities/deep-research/references/logical_fallacies.md"
+      ],
+      "hard_rule_count": 1,
+      "hard_rules_file": "rules/agent_devils_advocate.md"
+    },
+    "domain_reviewer": {
+      "capability_files": [
+        "capabilities/academic-paper-reviewer/references/quality_rubrics.md",
+        "capabilities/deep-research/references/argumentation_reasoning_framework.md"
+      ],
+      "hard_rule_count": 1,
+      "hard_rules_file": "rules/agent_domain_reviewer.md"
+    },
+    "draft_writer": {
+      "capability_files": [
+        "capabilities/academic-paper/references/exemplar_writing_standard.md",
+        "capabilities/academic-paper/references/anti_leakage_protocol.md",
+        "shared/taxonomies/forbidden_phrases.md",
+        "capabilities/academic-paper/references/social_science_narrative_style.md",
+        "capabilities/academic-paper/references/writing_quality_check.md"
+      ],
+      "hard_rule_count": 19,
+      "hard_rules_file": "rules/agent_draft_writer.md"
+    },
+    "editorial": {
+      "capability_files": [
+        "capabilities/academic-paper-reviewer/references/editorial_decision_standards.md",
+        "capabilities/academic-paper/references/social_science_narrative_style.md",
+        "capabilities/academic-paper-reviewer/references/top_journals_by_field.md"
+      ],
+      "hard_rule_count": 1,
+      "hard_rules_file": "rules/agent_editorial.md"
+    },
+    "experiment_engineer": {
+      "capability_files": [
+        "shared/computational_budget_guidelines.md",
+        "capabilities/academic-paper/references/statistical_visualization_standards.md",
+        "shared/taxonomies/chart_types.md",
+        "shared/ground_truth_isolation_pattern.md",
+        "shared/figure_metadata_schema.md",
+        "capabilities/academic-paper/references/methods_sophistication_standard.md"
+      ],
+      "hard_rule_count": 15,
+      "hard_rules_file": "rules/agent_experiment_engineer.md"
+    },
+    "final_paper_evaluator": {
+      "capability_files": [
+        "capabilities/academic-paper/references/writing_quality_check.md",
+        "capabilities/academic-paper/references/social_science_narrative_style.md",
+        "capabilities/academic-paper/references/transparent_empirical_reporting.md",
+        "capabilities/academic-paper/references/figure_table_evidence_audit.md"
+      ],
+      "hard_rule_count": 4,
+      "hard_rules_file": "rules/agent_final_paper_evaluator.md"
+    },
+    "independent_reviewer": {
+      "capability_files": [
+        "capabilities/academic-paper-reviewer/references/statistical_reporting_standards.md",
+        "capabilities/academic-paper/references/transparent_empirical_reporting.md",
+        "capabilities/academic-paper/references/figure_table_evidence_audit.md",
+        "capabilities/academic-paper-reviewer/references/review_criteria_framework.md"
+      ],
+      "hard_rule_count": 2,
+      "hard_rules_file": "rules/agent_independent_reviewer.md"
+    },
+    "literature_synthesizer": {
+      "capability_files": [
+        "capabilities/deep-research/agents/research_architect_agent.md",
+        "capabilities/deep-research/references/source_quality_hierarchy.md",
+        "capabilities/deep-research/references/methodology_patterns.md",
+        "capabilities/deep-research/references/argumentation_reasoning_framework.md"
+      ],
+      "hard_rule_count": 3,
+      "hard_rules_file": "rules/agent_literature_synthesizer.md"
+    },
+    "methodology_reviewer": {
+      "capability_files": [
+        "capabilities/academic-paper/references/methods_sophistication_standard.md",
+        "capabilities/academic-paper-reviewer/references/statistical_reporting_standards.md",
+        "capabilities/academic-paper/references/transparent_empirical_reporting.md",
+        "capabilities/academic-paper-reviewer/references/review_criteria_framework.md"
+      ],
+      "hard_rule_count": 3,
+      "hard_rules_file": "rules/agent_methodology_reviewer.md"
+    },
+    "reviewer": {
+      "capability_files": [
+        "capabilities/academic-paper-reviewer/references/statistical_reporting_standards.md"
+      ],
+      "hard_rule_count": 0,
+      "hard_rules_file": null
+    },
+    "revision_writer": {
+      "capability_files": [
+        "capabilities/academic-paper/agents/revision_coach_agent.md",
+        "capabilities/academic-paper/references/social_science_narrative_style.md",
+        "capabilities/academic-paper/references/writing_quality_check.md",
+        "capabilities/academic-paper/references/figure_table_evidence_audit.md",
+        "shared/references/protected_hedging_phrases.md"
+      ],
+      "hard_rule_count": 6,
+      "hard_rules_file": "rules/agent_revision_writer.md"
+    },
+    "structure_architect": {
+      "capability_files": [
+        "capabilities/academic-paper/references/exemplar_writing_standard.md",
+        "capabilities/academic-paper/references/social_science_narrative_style.md",
+        "capabilities/academic-paper/references/paper_structure_patterns.md",
+        "capabilities/academic-paper/agents/structure_architect_agent.md"
+      ],
+      "hard_rule_count": 11,
+      "hard_rules_file": "rules/agent_structure_architect.md"
+    }
+  },
+  "prose_fallback_files": [
+    "capabilities/academic-paper/references/anti_leakage_protocol.md",
+    "shared/taxonomies/forbidden_phrases.md",
+    "capabilities/academic-paper/references/writing_quality_check.md"
+  ]
+}

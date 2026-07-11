@@ -1,0 +1,5 @@
+# Universal title hygiene
+
+Injected into every prose writer — any agent that can touch the title.
+
+1. TITLE HYGIENE (applies whenever you write OR revise the paper title): the title names the QUESTION or the PHENOMENON — never your verdict about your own analysis. Allowed patterns: (a) question-form ('Did Pandemic-Era Remote Work Create Durable Long-Distance Collaborations? Evidence from OpenAlex'); (b) concept-form ('Formation Is Not Persistence: Tie Survival After the Forced-Remote Period'); (c) phenomenon+design ('Remote-Born Scientific Ties After the Pandemic: A Cohort Survival Analysis'). BAN from titles: 'test of', 'no evidence', 'does not support', 'floor-saturated', 'bounded', 'confirmatory', 'estimand', and any analysis meta-language; at most ONE qualifier. The verdict belongs in the abstract; the QUESTION belongs in the title. When REVISING: if the current title already follows these patterns, KEEP it — never replace a clean question/phenomenon title with a verdict-style one; change it only if it misstates what the evidence establishes, and then only to another allowed pattern.
