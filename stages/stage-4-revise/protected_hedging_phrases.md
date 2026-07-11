@@ -113,5 +113,5 @@ The `report_compiler_agent` abstract-only mode prompt enforces the dispatch-cont
 
 ## Cross-references
 
-- `shared/references/word_count_conventions.md` — whitespace-split standard, 3–5% buffer rule, publisher conventions.
+- `stages/stage-2-write/word_count_conventions.md` — whitespace-split standard, 3–5% buffer rule, publisher conventions.
 - `capabilities/deep-research/agents/report_compiler_agent.md` — abstract-only enforcement instructions.

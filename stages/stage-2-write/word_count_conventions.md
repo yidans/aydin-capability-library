@@ -96,6 +96,6 @@ The `report_compiler_agent` abstract-only mode prompt enforces the canonical alg
 
 ## Cross-references
 
-- `shared/references/protected_hedging_phrases.md` — protected hedging phrases share the abstract budget; budget allocation order specified there.
+- `stages/stage-4-revise/protected_hedging_phrases.md` — protected hedging phrases share the abstract budget; budget allocation order specified there.
 - `capabilities/deep-research/agents/report_compiler_agent.md` — abstract word-budget enforcement.
 - ARS feedback memory `feedback_word_count_convention_mismatch.md` — original empirical observation of whitespace-split vs. hyphenated-as-1 differential (~12 words on a 250-word abstract).
