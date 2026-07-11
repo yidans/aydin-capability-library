@@ -375,7 +375,8 @@ Do NOT report scores to the user. Just fix the issues silently during drafting.
    are treated), and the observation window — before any procedure detail.
 2. **Results raw evidence first**: the first Results paragraph gives raw
    quantities (per-condition unit counts, raw group means/risks) before any
-   derived statistic; then the contrast with CI and p.
+   derived statistic; then the contrast with appropriate uncertainty and a
+   *p* value only when relevant.
 3. **Abstract number density**: unless the locked venue requires additional
    named numeric fields, use at most three numbers — the group values (or the
    primary estimate) plus ONE uncertainty statement (p to two significant figures

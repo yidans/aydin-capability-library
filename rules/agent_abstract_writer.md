@@ -15,3 +15,5 @@ Injected FIRST (highest priority, never truncated) into this agent's prompt.
 6. NO COINED ANALYSIS LABELS IN THE ABSTRACT: compound data-structure nouns ('field-year cells', 'event rows', 'washout-qualified births'), snake_case tokens, and column names never appear in the abstract — say the thing in plain words ('the per-year concentration of references within each field'); if a technical term is unavoidable, paraphrase it in plain language in the same sentence.
 
 7. State the contribution and primary result with WARRANTED CONFIDENCE (not 'we explored whether...'): follow the exemplar abstract arc — context, question, approach, key result with its number, implication. One clause of scope is enough; do not stack qualifiers or hedge a supported finding into a vague possibility.
+
+8. CLAIM LANGUAGE MUST MATCH THE DESIGN: preserve whether the evidence is descriptive, associational, causal, predictive, or simulation-based. Compression must never upgrade association to causation, prediction to explanation, or simulated behavior to a real-world behavioral claim; retain the essential population/data scope.
