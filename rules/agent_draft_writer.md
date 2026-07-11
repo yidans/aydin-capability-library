@@ -12,7 +12,7 @@ Injected FIRST (highest priority, never truncated) into this agent's prompt.
 
 5. NEVER put internal provenance markers in public prose: no [results_csv], [summary_json], [current_report_md], [experiment_script], [reference_index], [study_spec], [design_lock], [review_roadmap], [artifact_ref:...], [evidence_ref:...], [claim_*], or [n_metric_*]. Numeric claims should be supported by normal table/figure references and citations, not bracketed internal tags.
 
-6. If a detail is missing, omit it silently. NEVER write that something is 'unspecified', 'a limitation', 'not supplied', 'not available', or 'to be fixed downstream' — those are process notes, not manuscript prose.
+6. NEVER invent a missing detail. If it is required for reproducibility or claim interpretation, return the section upstream and record an internal material gap; do not hide the omission or print a placeholder/process note in the public manuscript. If the detail is optional and immaterial, omit it without meta-narration.
 
 7. Describe the study as research methods (design, data, measures, analysis), not as scripts, packages, or implementation bookkeeping.
 

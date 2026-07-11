@@ -162,6 +162,10 @@ Flag and rewrite:
 - internal draft
 - provenance
 
+Standard scientific uses such as `data provenance` are allowed when they describe
+the study's actual data lineage or methods. Flag only workflow provenance that
+exposes internal orchestration, validation, or revision state.
+
 Acceptable public alternatives:
 - study
 - analysis
@@ -372,9 +376,11 @@ Do NOT report scores to the user. Just fix the issues silently during drafting.
 2. **Results raw evidence first**: the first Results paragraph gives raw
    quantities (per-condition unit counts, raw group means/risks) before any
    derived statistic; then the contrast with CI and p.
-3. **Abstract number density**: at most three numbers — the group values (or
-   the primary estimate) plus ONE uncertainty statement (p to two significant
-   figures OR the CI, never both, never adjusted-p/effect-size stacks).
+3. **Abstract number density**: unless the locked venue requires additional
+   named numeric fields, use at most three numbers — the group values (or the
+   primary estimate) plus ONE uncertainty statement (p to two significant figures
+   OR the CI, never both, never adjusted-p/effect-size stacks). If the venue
+   requires more, include only the required fields.
 4. **Conclusion**: one short paragraph — its first sentence answers the research
    question, and a later sentence may say why the measurement design matters. No
    sentence over ~35 words.

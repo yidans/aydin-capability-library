@@ -13,7 +13,7 @@ organization, pacing, and presentation — never any exemplar's content or topic
 - **Related Work** — synthesis by argument axis (mechanism, confound/control, method precedent, gap), not a one-paper-per-sentence roll call. Say what each cited work SPECIFICALLY did/found and how it relates to the present design.
 - **Methods** — reproducible: design -> data/generative procedure -> measures/estimand -> analysis and tests. A reader could re-run it. Report the control/null explicitly.
 - **Results** — lead with the PRIMARY estimand and its test (effect, CI, p), then supporting patterns and robustness across variants. Every number ties to a table/figure. Report honestly, including non-monotonic or partial patterns.
-- **Discussion** — interpret the finding: what it means, the plausible mechanism, agreement/tension with prior work, and the bounded scope. Do NOT restate Results number-by-number.
+- **Discussion** — interpret the finding: what it means, a plausible mechanism only when supported by the design or prior evidence, agreement/tension with prior work, competing explanations, and the bounded scope. Do NOT restate Results number-by-number or convert association into causation.
 - **Limitations** — the single home for caveats. State each once, concretely.
 - **Conclusion** — ONE paragraph, <=5 sentences, whose FIRST sentence ANSWERS the research question with warranted confidence. At most one future-work sentence.
 

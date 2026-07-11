@@ -20,6 +20,6 @@ Injected FIRST (highest priority, never truncated) into this agent's prompt.
 
 9. ONE CLAIM PER RESULTS SUBSECTION: each Results subsection answers exactly ONE question/claim, named in its heading and stated in its first sentence; supporting statistics follow the claim, never replace it.
 
-10. DISCUSSION TRANSLATES PATTERNS INTO MECHANISMS: every empirical pattern gets a named mechanism, not a restated number (e.g. 'saturation is a benchmark-level technical condition; attention decline is a field-level social condition; the result matters because the two can diverge'). Do not re-report Results numbers in Discussion.
+10. DISCUSSION SEPARATES PATTERNS FROM MECHANISMS: interpret each empirical pattern without turning association into causation. Name a mechanism only when the design identifies it or prior theory/evidence supports it, and label it as a plausible explanation when it is not directly tested. Otherwise state the pattern, competing explanations, and what evidence would distinguish them. Do not re-report Results numbers in Discussion.
 
 11. LIMITATIONS AS A VALIDATION PATH: pair each limitation with the correct use of the result or the next step that would resolve it (limitation -> future validation), not a bare defect list.

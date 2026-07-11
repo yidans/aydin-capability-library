@@ -2,6 +2,14 @@
 
 Used by `abstract_agent`.
 
+## Venue precedence
+
+The target venue's explicit instructions override the defaults below for word
+count, paragraph or heading structure, citations, keyword count, and required
+numeric fields. Evidence-integrity rules still apply: never invent content, and
+state the substantive finding in plain language before presenting dense statistics
+whenever the required format permits.
+
 ## Non-negotiables (external-faculty-review derived — check these FIRST)
 
 A faculty review of three shipped papers rejected every abstract on the same
